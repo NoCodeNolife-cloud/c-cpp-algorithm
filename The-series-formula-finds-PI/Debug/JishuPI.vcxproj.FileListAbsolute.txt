@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\π\JishuPI\Debug\JishuPI.exe
+E:\项目\visual studio Project\Algorithm\π\JishuPI\Debug\JishuPI.pdb

@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Sequential List\Debug\Sequential List.exe
+E:\项目\visual studio Project\Algorithm\Sequential List\Debug\Sequential List.pdb

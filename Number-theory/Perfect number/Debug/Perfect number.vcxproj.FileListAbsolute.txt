@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Number theory\Perfect number\Debug\Perfect number.exe
+E:\项目\visual studio Project\Algorithm\Number theory\Perfect number\Debug\Perfect number.pdb

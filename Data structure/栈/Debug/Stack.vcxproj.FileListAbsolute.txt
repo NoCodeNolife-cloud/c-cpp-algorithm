@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Stack\Debug\Stack.exe
+E:\项目\visual studio Project\Algorithm\Stack\Debug\Stack.pdb

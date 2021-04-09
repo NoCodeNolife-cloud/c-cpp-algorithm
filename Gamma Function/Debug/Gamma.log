@@ -1,0 +1,3 @@
+﻿  Gamma.cpp
+E:\项目\visual studio Project\Algorithm\Gamma\Gamma.cpp(39,13): warning C4326: “main”的返回类型应为“int”而非“void”
+  Gamma.vcxproj -> E:\项目\visual studio Project\Algorithm\Gamma\Debug\Gamma.exe

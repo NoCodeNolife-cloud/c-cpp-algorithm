@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Number theory\Greatest common divisor(gcd)\Debug\Greatest common divisor(gcd).exe
+E:\项目\visual studio Project\Algorithm\Number theory\Greatest common divisor(gcd)\Debug\Greatest common divisor(gcd).pdb

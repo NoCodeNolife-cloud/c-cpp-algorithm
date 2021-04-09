@@ -1,0 +1,5 @@
+﻿  Assertion.cpp
+  Stack.cpp
+E:\项目\visual studio Project\Algorithm\Stack\Stack.cpp(5,1): warning C4326: “main”的返回类型应为“int”而非“void”
+  正在生成代码...
+  Stack.vcxproj -> E:\项目\visual studio Project\Algorithm\Stack\Debug\Stack.exe

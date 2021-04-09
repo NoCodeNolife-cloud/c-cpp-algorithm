@@ -1,0 +1,4 @@
+﻿  Numerical integration.cpp
+E:\项目\visual studio Project\Algorithm\Numerical integration\Numerical integration.cpp(33,13): warning C4326: “main”的返回类型应为“int”而非“void”
+E:\项目\visual studio Project\Algorithm\Numerical integration\Numerical integration.cpp(34,7): warning C4101: “again”: 未引用的局部变量
+  Numerical integration.vcxproj -> E:\项目\visual studio Project\Algorithm\Numerical integration\Debug\Numerical integration.exe

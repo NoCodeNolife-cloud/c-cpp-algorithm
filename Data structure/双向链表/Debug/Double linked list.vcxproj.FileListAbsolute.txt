@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Daily-practice\Double linked list\Debug\Double linked list.exe
+E:\项目\visual studio Project\Daily-practice\Double linked list\Debug\Double linked list.pdb

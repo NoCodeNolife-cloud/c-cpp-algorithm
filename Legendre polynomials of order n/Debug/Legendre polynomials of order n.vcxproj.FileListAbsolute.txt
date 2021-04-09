@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Legendre polynomials of order n\Debug\Legendre polynomials of order n.exe
+E:\项目\visual studio Project\Algorithm\Legendre polynomials of order n\Debug\Legendre polynomials of order n.pdb

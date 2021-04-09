@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\SQRT\Debug\SQRT.exe
+E:\项目\visual studio Project\Algorithm\SQRT\Debug\SQRT.pdb

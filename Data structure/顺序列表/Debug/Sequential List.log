@@ -1,0 +1,6 @@
+﻿  Data.cpp
+  Sequential List.cpp
+E:\项目\visual studio Project\Algorithm\Sequential List\Sequential List.cpp(2,13): warning C4326: “main”的返回类型应为“int”而非“void”
+  SLType.cpp
+  正在生成代码...
+  Sequential List.vcxproj -> E:\项目\visual studio Project\Algorithm\Sequential List\Debug\Sequential List.exe

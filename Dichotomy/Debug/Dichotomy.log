@@ -1,0 +1,3 @@
+﻿  Dichotomy.cpp
+E:\项目\visual studio Project\Algorithm\Dichotomy\Dichotomy.cpp(19,13): warning C4326: “main”的返回类型应为“int”而非“void”
+  Dichotomy.vcxproj -> E:\项目\visual studio Project\Algorithm\Dichotomy\Debug\Dichotomy.exe

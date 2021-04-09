@@ -1,0 +1,4 @@
+﻿  SQRT.cpp
+E:\项目\visual studio Project\Algorithm\SQRT\SQRT.cpp(20,13): warning C4326: “main”的返回类型应为“int”而非“void”
+E:\项目\visual studio Project\Algorithm\SQRT\SQRT.cpp(21,7): warning C4101: “again”: 未引用的局部变量
+  SQRT.vcxproj -> E:\项目\visual studio Project\Algorithm\SQRT\Debug\SQRT.exe

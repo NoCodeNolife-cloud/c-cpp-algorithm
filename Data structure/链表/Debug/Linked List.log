@@ -1,0 +1,29 @@
+﻿  Linked List.cpp
+E:\项目\visual studio Project\Algorithm\Linked List\Linked List.cpp(5,13): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+E:\项目\visual studio Project\Algorithm\Linked List\Linked List.cpp(6,13): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+E:\项目\visual studio Project\Algorithm\Linked List\Linked List.cpp(8,13): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+E:\项目\visual studio Project\Algorithm\Linked List\Assertion.h(147,4): warning C4101: “data”: 未引用的局部变量
+E:\项目\visual studio Project\Algorithm\Linked List\Assertion.h(132): message : 在编译 类 模板 成员函数“T List<T>::find(int)”时
+          with
+          [
+              T=float
+          ]
+E:\项目\visual studio Project\Algorithm\Linked List\Linked List.cpp(12): message : 查看对正在编译的函数 模板 实例化“T List<T>::find(int)”的引用
+          with
+          [
+              T=float
+          ]
+E:\项目\visual studio Project\Algorithm\Linked List\Linked List.cpp(4): message : 查看对正在编译的 类 模板 实例化“List<float>”的引用
+  Linked List.vcxproj -> E:\项目\visual studio Project\Algorithm\Linked List\Debug\Linked List.exe

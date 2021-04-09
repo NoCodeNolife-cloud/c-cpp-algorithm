@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Dynamic array sorting\Debug\Dynamic array sorting.exe
+E:\项目\visual studio Project\Algorithm\Dynamic array sorting\Debug\Dynamic array sorting.pdb

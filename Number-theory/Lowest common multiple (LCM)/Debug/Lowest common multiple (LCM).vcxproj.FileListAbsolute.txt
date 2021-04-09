@@ -1,0 +1,2 @@
+E:\项目\visual studio Project\Algorithm\Number theory\Lowest common multiple (LCM)\Debug\Lowest common multiple (LCM).exe
+E:\项目\visual studio Project\Algorithm\Number theory\Lowest common multiple (LCM)\Debug\Lowest common multiple (LCM).pdb
