@@ -11,7 +11,7 @@ int main(char argc, char* argv[]) {
 	cout << "matrixshell\n";
 	for (vector<int>& x : matrixshell) {
 		for (int& y : x) {
-			y = rand() % 100 - 50;
+			y = rand() % 2;
 			cout << setw(7) << left << y;
 		}
 		cout << endl;
@@ -25,7 +25,7 @@ int main(char argc, char* argv[]) {
 	cout << "matirx\n";
 	for (int i = 1; i < length + 1; i++) {
 		for (int j = 1; j < width + 1; j++) {
-			matirx[i][j] = rand() % 100 - 50;
+			matirx[i][j] = rand() % 2;
 			cout << setw(7) << left << matirx[i][j];
 		}
 		cout << endl;
