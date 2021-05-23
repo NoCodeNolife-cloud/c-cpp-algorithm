@@ -1,4 +1,4 @@
 ﻿  Bubble Sort.cpp
-E:\项目\visual studio Project\Algorithm\Bubble Sort\Bubble Sort.cpp(16,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-E:\项目\visual studio Project\Algorithm\Bubble Sort\Bubble Sort.cpp(29,13): warning C4326: “main”的返回类型应为“int”而非“void”
-  Bubble Sort.vcxproj -> E:\项目\visual studio Project\Algorithm\Bubble Sort\Debug\Bubble Sort.exe
+E:\项目\GitHub项目仓管\c-cpp-algorithm\Sort\bubble sort\Bubble Sort.cpp(16,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+E:\项目\GitHub项目仓管\c-cpp-algorithm\Sort\bubble sort\Bubble Sort.cpp(29,13): warning C4326: “main”的返回类型应为“int”而非“void”
+  Bubble Sort.vcxproj -> E:\项目\GitHub项目仓管\c-cpp-algorithm\Sort\bubble sort\Debug\Bubble Sort.exe
