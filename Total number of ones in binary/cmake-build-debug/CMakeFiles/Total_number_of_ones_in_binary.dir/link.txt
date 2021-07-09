@@ -1,0 +1,3 @@
+"D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Total_number_of_ones_in_binary.dir/objects.a
+D:\CLION2~1.1\mingw64\bin\ar.exe cr CMakeFiles\Total_number_of_ones_in_binary.dir/objects.a @CMakeFiles\Total_number_of_ones_in_binary.dir\objects1.rsp
+D:\CLION2~1.1\mingw64\bin\G__~1.EXE  -Wall -fexec-charset=GBK -g -static -Wl,--whole-archive CMakeFiles\Total_number_of_ones_in_binary.dir/objects.a -Wl,--no-whole-archive -o Total_number_of_ones_in_binary.exe -Wl,--out-implib,libTotal_number_of_ones_in_binary.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Total_number_of_ones_in_binary.dir\linklibs.rsp
