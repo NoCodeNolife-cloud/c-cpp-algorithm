@@ -6,7 +6,13 @@
 
 template<typename T>
 void List<T>::init() {
-
+    header = new ListNode<T>;/*头哨兵节点*/
+    trailer = new ListNode<T>;/*尾哨兵节点*/
+    header->succ = trailer;
+    header->pred = nullptr;
+    trailer->pred = header;
+    trailer->succ = nullptr;
+    _size = 0;/*记录规模*/
 }
 
 template<typename T>
@@ -15,8 +21,12 @@ int List<T>::clear() {
 }
 
 template<typename T>
-void List<T>::copyNodes(ListNode<T> *, int) {
-
+void List<T>::copyNodes(ListNode<T> *p, int n) {
+    init();/*创建头/尾哨兵节点并做初始化*/
+    while (n--) {
+        insertAsLast(p->data);/*将起自p的n项依次作为末节点插入*/
+        p = p->succ;
+    }
 }
 
 template<typename T>
@@ -71,7 +81,11 @@ bool List<T>::empty() const {
 
 template<typename T>
 T &List<T>::operator[](int r) const {
-    return <#initializer#>;
+    ListNode<T> *p = first();/*从首节点出发*/
+    while (0 < r--) {/*顺数第r个节点即是*/
+        p = p->succ;
+    }
+    return p->data;/*目标节点,返回其中的元素*/
 }
 
 template<typename T>
@@ -101,7 +115,12 @@ ListNode<T> *List<T>::find(const T &e) const {
 
 template<typename T>
 ListNode<T> *List<T>::find(const T &e, int n, ListNode<T> *p) const {
-    return nullptr;
+    while (0 < n--) {/*对于p的最近的n个前驱,从右向左*/
+        if (e == (p = p->pred)->data) {/*逐个比对,直至命中或范围越界*/
+            return p;
+        }
+    }
+    return nullptr;/*p越界意味着区间内不含e,查找失败*/
 }
 
 template<typename T>
@@ -126,22 +145,26 @@ ListNode<T> *List<T>::selectMax() {
 
 template<typename T>
 ListNode<T> *List<T>::insertAsFirst(const T &e) {
-    return nullptr;
+    _size++;
+    return header->insertAsSucc(e);/*e当做首节点插入*/
 }
 
 template<typename T>
 ListNode<T> *List<T>::insertAsLast(const T &e) {
-    return nullptr;
+    _size++;
+    return trailer->insertAsPred(e);/*e当做末节点插入*/
 }
 
 template<typename T>
 ListNode<T> *List<T>::insertBefore(ListNode<T> *p, const T &e) {
-    return nullptr;
+    _size++;
+    return p->insertAsPred(e);/*e当做p的前驱插入*/
 }
 
 template<typename T>
 ListNode<T> *List<T>::insertAfter(ListNode<T> *p, const T &e) {
-    return nullptr;
+    _size++;
+    return p->insertAsSucc(e);/*e当做p的后驱插入*/
 }
 
 template<typename T>
