@@ -5,6 +5,7 @@
 #ifndef LIST_LIST_H
 #define LIST_LIST_H
 
+#include <cstdlib>
 #include "ListNode.h"
 
 template<typename T>
@@ -34,6 +35,8 @@ protected:
      * 有序列表区间归并
      */
     void merge(ListNode<T> *, int, List<T> &, ListNode<T> *, int);
+
+    void mergeSort(ListNode<T> *, int);
 
     /**
      * 对从p开始连续的n各节点选择排序
