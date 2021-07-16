@@ -66,10 +66,10 @@ RM = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector"
+CMAKE_SOURCE_DIR = "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\Stack"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\Stack\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\cmake-build-debug\CMakeFiles" "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\Stack\cmake-build-debug\CMakeFiles" "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\Stack\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\Stack\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -129,17 +129,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vector
+# Target rules for targets named Stack
 
 # Build rule for target.
-vector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 vector
-.PHONY : vector
+Stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Stack
+.PHONY : Stack
 
 # fast build rule for target.
-vector/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/build
-.PHONY : vector/fast
+Stack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/build
+.PHONY : Stack/fast
+
+Stack.obj: Stack.cpp.obj
+
+.PHONY : Stack.obj
+
+# target to build an object file
+Stack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/Stack.cpp.obj
+.PHONY : Stack.cpp.obj
+
+Stack.i: Stack.cpp.i
+
+.PHONY : Stack.i
+
+# target to preprocess a source file
+Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/Stack.cpp.i
+.PHONY : Stack.cpp.i
+
+Stack.s: Stack.cpp.s
+
+.PHONY : Stack.s
+
+# target to generate assembly for a file
+Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/Stack.cpp.s
+.PHONY : Stack.cpp.s
 
 Vector.obj: Vector.cpp.obj
 
@@ -147,7 +174,7 @@ Vector.obj: Vector.cpp.obj
 
 # target to build an object file
 Vector.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/Vector.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/Vector.cpp.obj
 .PHONY : Vector.cpp.obj
 
 Vector.i: Vector.cpp.i
@@ -156,7 +183,7 @@ Vector.i: Vector.cpp.i
 
 # target to preprocess a source file
 Vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/Vector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/Vector.cpp.i
 .PHONY : Vector.cpp.i
 
 Vector.s: Vector.cpp.s
@@ -165,7 +192,7 @@ Vector.s: Vector.cpp.s
 
 # target to generate assembly for a file
 Vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/Vector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/Vector.cpp.s
 .PHONY : Vector.cpp.s
 
 main.obj: main.cpp.obj
@@ -174,7 +201,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -183,7 +210,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -192,7 +219,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\vector.dir\build.make CMakeFiles/vector.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack.dir\build.make CMakeFiles/Stack.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -203,7 +230,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... vector
+	@echo ... Stack
+	@echo ... Stack.obj
+	@echo ... Stack.i
+	@echo ... Stack.s
 	@echo ... Vector.obj
 	@echo ... Vector.i
 	@echo ... Vector.s

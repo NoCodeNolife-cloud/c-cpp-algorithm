@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Stack.cpp
+Stack.h
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Stack.h
+
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Stack.h
+Vector.h
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Vector.h
+
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Vector.h
+random
+-
+
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/main.cpp
+iostream
+-
+Vector.h
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Vector.h
+Stack.h
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/STL/Stack/Stack.h
+

@@ -52,10 +52,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,28 +78,28 @@ include CMakeFiles/vector.dir/flags.make
 CMakeFiles/vector.dir/main.cpp.obj: CMakeFiles/vector.dir/flags.make
 CMakeFiles/vector.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/vector.dir/main.cpp.obj"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\vector.dir\main.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\main.cpp"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\vector.dir\main.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\main.cpp"
 
 CMakeFiles/vector.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector.dir/main.cpp.i"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\main.cpp" > CMakeFiles\vector.dir\main.cpp.i
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\main.cpp" > CMakeFiles\vector.dir\main.cpp.i
 
 CMakeFiles/vector.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector.dir/main.cpp.s"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\main.cpp" -o CMakeFiles\vector.dir\main.cpp.s
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\main.cpp" -o CMakeFiles\vector.dir\main.cpp.s
 
 CMakeFiles/vector.dir/Vector.cpp.obj: CMakeFiles/vector.dir/flags.make
 CMakeFiles/vector.dir/Vector.cpp.obj: ../Vector.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vector.dir/Vector.cpp.obj"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\vector.dir\Vector.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\Vector.cpp"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\vector.dir\Vector.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\Vector.cpp"
 
 CMakeFiles/vector.dir/Vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector.dir/Vector.cpp.i"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\Vector.cpp" > CMakeFiles\vector.dir\Vector.cpp.i
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\Vector.cpp" > CMakeFiles\vector.dir\Vector.cpp.i
 
 CMakeFiles/vector.dir/Vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector.dir/Vector.cpp.s"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\Vector.cpp" -o CMakeFiles\vector.dir\Vector.cpp.s
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\vector\Vector.cpp" -o CMakeFiles\vector.dir\Vector.cpp.s
 
 # Object files for target vector
 vector_OBJECTS = \
