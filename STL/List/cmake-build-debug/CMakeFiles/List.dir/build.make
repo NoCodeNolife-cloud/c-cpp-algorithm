@@ -52,10 +52,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,41 +78,41 @@ include CMakeFiles/List.dir/flags.make
 CMakeFiles/List.dir/main.cpp.obj: CMakeFiles/List.dir/flags.make
 CMakeFiles/List.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/List.dir/main.cpp.obj"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\main.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\main.cpp"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\main.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\main.cpp"
 
 CMakeFiles/List.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/List.dir/main.cpp.i"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\main.cpp" > CMakeFiles\List.dir\main.cpp.i
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\main.cpp" > CMakeFiles\List.dir\main.cpp.i
 
 CMakeFiles/List.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/List.dir/main.cpp.s"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\main.cpp" -o CMakeFiles\List.dir\main.cpp.s
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\main.cpp" -o CMakeFiles\List.dir\main.cpp.s
 
 CMakeFiles/List.dir/ListNode.cpp.obj: CMakeFiles/List.dir/flags.make
 CMakeFiles/List.dir/ListNode.cpp.obj: ../ListNode.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/List.dir/ListNode.cpp.obj"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\ListNode.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\ListNode.cpp"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\ListNode.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\ListNode.cpp"
 
 CMakeFiles/List.dir/ListNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/List.dir/ListNode.cpp.i"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\ListNode.cpp" > CMakeFiles\List.dir\ListNode.cpp.i
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\ListNode.cpp" > CMakeFiles\List.dir\ListNode.cpp.i
 
 CMakeFiles/List.dir/ListNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/List.dir/ListNode.cpp.s"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\ListNode.cpp" -o CMakeFiles\List.dir\ListNode.cpp.s
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\ListNode.cpp" -o CMakeFiles\List.dir\ListNode.cpp.s
 
 CMakeFiles/List.dir/List.cpp.obj: CMakeFiles/List.dir/flags.make
 CMakeFiles/List.dir/List.cpp.obj: ../List.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/List.dir/List.cpp.obj"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\List.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\List.cpp"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\List.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\List.cpp"
 
 CMakeFiles/List.dir/List.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/List.dir/List.cpp.i"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\List.cpp" > CMakeFiles\List.dir\List.cpp.i
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\List.cpp" > CMakeFiles\List.dir\List.cpp.i
 
 CMakeFiles/List.dir/List.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/List.dir/List.cpp.s"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\List.cpp" -o CMakeFiles\List.dir\List.cpp.s
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\STL\List\List.cpp" -o CMakeFiles\List.dir\List.cpp.s
 
 # Object files for target List
 List_OBJECTS = \
