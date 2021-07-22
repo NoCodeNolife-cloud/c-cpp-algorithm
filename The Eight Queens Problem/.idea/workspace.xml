@@ -41,19 +41,9 @@
     <property name="cmake.loaded.for.project" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="The_Eight_Queens_Problem" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="The_Eight_Queens_Problem" TARGET_NAME="The_Eight_Queens_Problem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="The_Eight_Queens_Problem" RUN_TARGET_NAME="The_Eight_Queens_Problem">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -66,6 +56,9 @@
       <option name="presentableId" value="Default" />
       <updated>1626750357106</updated>
       <workItem from="1626750375257" duration="3009000" />
+      <workItem from="1626928627113" duration="3613000" />
+      <workItem from="1626937003403" duration="38000" />
+      <workItem from="1626937065211" duration="1000" />
     </task>
     <servers />
   </component>
