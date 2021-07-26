@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/Binary tree/BinTree.h
+stack
+-
+
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/Binary tree/main.cpp
+iostream
+-
+BinTree.h
+E:/programe/GitHub project warehouse manager/c-cpp-algorithm/Binary tree/BinTree.h
+

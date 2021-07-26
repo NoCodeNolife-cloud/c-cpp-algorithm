@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/programe/GitHub project warehouse manager/c-cpp-algorithm/Binary tree/BinNode.h">
+		<Unit filename="E:/programe/GitHub project warehouse manager/c-cpp-algorithm/Binary tree/BinTree.h">
 			<Option target="Binary_tree"/>
 		</Unit>
 		<Unit filename="E:/programe/GitHub project warehouse manager/c-cpp-algorithm/Binary tree/main.cpp">
