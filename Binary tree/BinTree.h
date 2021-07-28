@@ -7,6 +7,7 @@
 #define stature(p) ((P)?(p)->height:-1);//节点高度（与“空树高度为-1”的约定相统一）
 
 #include <stack>
+#include <queue>
 
 using namespace std;
 
@@ -65,9 +66,23 @@ struct BinNode {
     }
 
 
-    /// 子树层次遍历
+    /// 二叉树层次遍历
     template<typename VST>
-    void travLevel(VST &);
+    void travLevel(VST &) {
+        queue<BinNode<T> *> Q;/*辅助队列*/
+        Q.push(this);/*根节点入队*/
+        while (!Q.empty()) {/*在队列再次变空之前,反复迭代*/
+            BinNode<T> *x = Q.front();/*去除队首节点并访问之*/
+            Q.pop();
+            visit(x->data);
+            if (x->lChild) {/*左孩子入队*/
+                Q.push(x->lChild);
+            }
+            if (x->rChild) {/*右孩子入队*/
+                Q.push(x->rChild);
+            }
+        }
+    }
 
     /// 子树先序遍历
     template<typename VST>
@@ -426,5 +441,70 @@ void travIn_I2(BinNode<T> *x, VST &visit) {
         }
     }
 }
+
+/// 二叉树中序遍历算法,无需辅助线
+/// \tparam T
+/// \tparam VST
+/// \param x
+/// \param visit
+template<typename T, typename VST>
+void travIn_I3(BinNode<T> *x, VST &visit) {
+    bool backtrack = false;/*前一步是否刚从右子树回溯(省去栈,经o(1)辅助空间*/
+    while (true) {
+        if (!backtrack && x->lChild) {/*若有左子树且不是刚刚回溯,则*/
+            x = x->lChild;/*深入遍历左子树*/
+        } else {/*否则*/
+            visit(x->data);/*访问该节点*/
+            if (x->rChild) {/*若其右节点非空,则*/
+                x = x->rChild;/*深入右子树继续遍历*/
+                backtrack = false;/*并关闭回溯标志*/
+            } else {/*若右子树空,则*/
+                if (!(x = x->succ())) {/*回溯*/
+                    break;
+                }
+                backtrack = true;/*并设置回溯标志*/
+            }
+        }
+    }
+}
+
+/// 在以S栈顶节点为根的子树中,找到最高左侧可见叶节点
+/// \tparam T
+/// \param S
+template<typename T>
+static void gotoHLVFL(stack<BinNode<T> *> &S) {
+    while (BinNode<T> *x = S.top()) {/*自顶向下,反复检查当前节点(即栈顶)*/
+        if (x->lChild) {/*尽可能向左*/
+            if (x->rChild) {/*若有右孩子,优先入栈*/
+                S.push(x->rChild);
+            }
+            S.push(x->lChild);/*然后才转至左孩子*/
+        } else {/*实不得已*/
+            S.push(x->rChild);/*才向右*/
+        }
+    }
+    S.pop();/*返回之前,弹出栈顶的空节点*/
+}
+
+/// 二叉树的后序遍历
+/// \tparam T
+/// \tparam VST
+/// \param x
+/// \param visit
+template<typename T, typename VST>
+void travPost_T(BinNode<T> *x, VST &visit) {
+    stack<BinNode<T> *> S;/*辅助栈*/
+    if (x) {/*根节点入栈*/
+        S.push(x);
+    }
+    while (!S.empty()) {
+        if (S.top() != x->parent) {/*若栈顶非当前节点之父(则必为其右兄),此时需*/
+            gotoHLVFL(S);/*在以其右兄为根之子树中,找到HLVFL(相当于递归深入其中)*/
+        }
+        x = S.pop();/*弹出栈顶*/
+        visit(x->data);/*访问*/
+    }
+}
+
 
 #endif //BINARY_TREE_BINTREE_H
