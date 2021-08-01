@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Bracket_matching" targetName="Bracket_matching" />
+      <config projectName="Graph" targetName="Graph" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acd3b5e8-fa0d-4f9d-bf01-134cc7bdf73d" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="d0eab0a9-586e-4492-8b62-9a8b1a926c4c" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,13 +22,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1vUNx2EcVH2DmOn1zFlQngds7Fd" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1vySIxpR2IWGUhQZD21xhSQWOIP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -38,30 +47,33 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="Bracket_matching" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Bracket_matching" TARGET_NAME="Bracket_matching" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Bracket_matching" RUN_TARGET_NAME="Bracket_matching">
+    <configuration name="Graph" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Graph" TARGET_NAME="Graph" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Graph" RUN_TARGET_NAME="Graph">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="acd3b5e8-fa0d-4f9d-bf01-134cc7bdf73d" name="Default Changelist" comment="" />
-      <created>1626612951665</created>
+      <changelist id="d0eab0a9-586e-4492-8b62-9a8b1a926c4c" name="Default Changelist" comment="" />
+      <created>1627532760335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1626612951665</updated>
-      <workItem from="1626612953900" duration="4069000" />
-      <workItem from="1627791416047" duration="42000" />
+      <updated>1627532760335</updated>
+      <workItem from="1627532764310" duration="5237000" />
+      <workItem from="1627549737564" duration="2733000" />
+      <workItem from="1627554152435" duration="1722000" />
+      <workItem from="1627556434859" duration="1408000" />
+      <workItem from="1627641047933" duration="44000" />
+      <workItem from="1627641559946" duration="1116000" />
+      <workItem from="1627642752142" duration="3135000" />
+      <workItem from="1627649044574" duration="2127000" />
+      <workItem from="1627719794647" duration="5800000" />
+      <workItem from="1627787694494" duration="3119000" />
     </task>
     <servers />
   </component>
