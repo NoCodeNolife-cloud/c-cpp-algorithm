@@ -4,6 +4,7 @@
 
 #ifndef BINARY_TREE_BINTREE_H
 #define BINARY_TREE_BINTREE_H
+
 #define IsRoot(x) (!((x).parent))
 #define IsLChild(x) (!IsRoot(x) && (&(x) == (x).parent->lChild))
 #define IsRChild(x) (!IsRoot(x) && (&(x) == (x).parent->rChild))
@@ -15,12 +16,13 @@
 #define IsLeaf(x) (!HasChild(x))
 #define sibling(p) (IsLChild(*(p)) ?(p)->parent->rChild :(p)->parent->lChild)//兄弟
 #define uncle(x) ( IsLChild(*((x)->parent)) ?(x)->parent->parent->rChild :(x)->parent->parent->lChild) //叔叔
-#define FromParentTo(x) (IsRoot(x) ? _root : (IsLChild(x) ? (x).parent->lChild : (x).parent->rChild)) //来自父亲癿指针
+#define FromParentTo(x) (IsRoot(x) ? BinNode<T>::_root : (IsLChild(x) ? (x).parent->lChild : (x).parent->rChild))
 #define stature(p) ((p)?(p)->height:-1)//节点高度（与“空树高度为-1”的约定相统一）
 #define Balanced(x) (stature((x).lChild)==stature((x).rChild))
 #define BalFac(x) (stature((x).lChild)-stature((x).rChild))
 #define AvlBalanced(x) ((-2<BalFac(x))&&(BalFac(x)<2))
-#define tallerChild(x) (stature((x)->lChild)>stature((x)->rChild)?(x)->lChild:(stature((x)->?rChild)>stature((x)->lChild)?(x)->rChild:(IsLChild(*(x))?(x)->lChild:(x)->rChild)))
+#define tallerChild(x) (stature((x)->lChild) > stature((x)->rChild) ? (x)->lChild : ( stature((x)->rChild) > stature((x)->lChild) ? (x)->rChild : (IsLChild(*(x)) ? (x)->lChild : (x)->rChild)))
+
 #include <stack>
 #include <queue>
 
@@ -586,14 +588,60 @@ protected:
      * @return
      */
     BinNode<T> *
-    connect34(BinNode<T> *, BinNode<T> *, BinNode<T> *, BinNode<T> *, BinNode<T> *, BinNode<T> *, BinNode<T> *);
+    connect34(BinNode<T> *a, BinNode<T> *b, BinNode<T> *c, BinNode<T> *T0, BinNode<T> *T1, BinNode<T> *T2,
+              BinNode<T> *T3) {
+        a->lChild = T0;
+        if (T0) {
+            T0->parent = a;
+        }
+        a->rChild = T1;
+        if (T1) {
+            T1->parent = a;
+        }
+        updateHeight(a);
+        c->lChild = T2;
+        if (T2) {
+            T2->parent = c;
+        }
+        c->rChild = T3;
+        if (T3) {
+            T3->parent = c;
+        }
+        updateHeignt(c);
+        b->lChild = a;
+        a->parent = b;
+        b->rChild = c;
+        c->parent = b;
+        updateHeight(b);
+        return b;/*该子树新的根节点*/
+    }
 
     /**
      * 对x及其父亲、祖父做统一旋转调整
      * @param x
      * @return
      */
-    BinNode<T> *rotateAt(BinNode<T> *x);
+    BinNode<T> *rotateAt(BinNode<T> *v) {
+        BinNode<T> *p = v->parent;/*视v、p和g相对位置分四种情况*/
+        BinNode<T> *g = p->parent;
+        if (IsLChild(*p)) {
+            if (IsLChild(*v)) {
+                p->parent = g->parent;
+                return connect34(v, p, g, v->lChild, v->rChild, p->rChild, g->rChild);
+            } else {
+                v->parent = g->parent;
+                return connect34(p, v, g, p->lChild, v->lChild, v->rChild, g->rChild);
+            }
+        } else {
+            if (IsRChild(*v)) {
+                p->parent = g->parent;
+                return connect34(g, p, v, g->lChild, p->lChild, v->lChild, v->rChild);
+            } else {
+                v->parent = g->parent;
+                return connect34(g, v, p, g->lChild, v->lChild, v->rChild, p->rChild);
+            }
+        }
+    }
 
 public:
     /**
@@ -678,7 +726,6 @@ static BinNode<T> *removeAt(BinNode<T> *&x, BinNode<T> *&hot) {
 }
 
 
-
 template<typename T>
 class AVL : public BST<T> {
 public:
@@ -699,17 +746,32 @@ public:
                 FromParentTo(*g) = rotateAt(tallerChild(tallerChild(g)));
                 break;
             } else {
-
+                updateHeight(g);
             }
         }
+        return x;
     }
 
     /**
      * 删除（重写）
      * @param e
-     * @return
+     * @return 若目标节点存在且被删除，返回true；否则，返回false
      */
-    bool remove(const T &e);
+    bool remove(const T &e) {
+        BinNode<T> *&x = search(e);/*确认目标节点存在*/
+        if (!x) {
+            return false;
+        }
+        removeAt(x, AVL<T>::_hot);/*先按BST规则删除之*/
+        AVL<T>::_size--;
+        for (BinNode<T> *g = AVL<T>::_hot; g; g = g->parent) {/*从_hot出发向上，逐层检查各代祖先g*/
+            if (!AvlBalanced(*g)) {/*一旦发现g失衡，则采用（“3+4”算法）使之复衡*/
+                g = FromParentTo(*g) = rotateAt(tallerChild(tallerChild(g)));/*将该子树联至原父亲*/
+            }
+            updateHeight(g);/*更新其高度*/
+        }
+        return true;/*删除成功*/
+    }
 };
 
 #endif //BINARY_TREE_BINTREE_H
