@@ -52,10 +52,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,15 +78,15 @@ include CMakeFiles/merge_sort.dir/flags.make
 CMakeFiles/merge_sort.dir/main.cpp.obj: CMakeFiles/merge_sort.dir/flags.make
 CMakeFiles/merge_sort.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/merge_sort.dir/main.cpp.obj"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\merge_sort.dir\main.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\main.cpp"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\merge_sort.dir\main.cpp.obj -c "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\main.cpp"
 
 CMakeFiles/merge_sort.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/merge_sort.dir/main.cpp.i"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\main.cpp" > CMakeFiles\merge_sort.dir\main.cpp.i
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\main.cpp" > CMakeFiles\merge_sort.dir\main.cpp.i
 
 CMakeFiles/merge_sort.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/merge_sort.dir/main.cpp.s"
-	D:\CLION2~1.1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\main.cpp" -o CMakeFiles\merge_sort.dir\main.cpp.s
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\programe\GitHub project warehouse manager\c-cpp-algorithm\Sort\merge sort\main.cpp" -o CMakeFiles\merge_sort.dir\main.cpp.s
 
 # Object files for target merge_sort
 merge_sort_OBJECTS = \
