@@ -1,0 +1,3 @@
+H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Inquire/Binary search for the right edge/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Inquire/Binary search for the right edge/cmake-build-debug/CMakeFiles/Binary_search_for_the_right_edge.dir
+H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Inquire/Binary search for the right edge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
