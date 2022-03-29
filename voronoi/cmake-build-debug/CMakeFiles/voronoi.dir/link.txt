@@ -1,3 +1,3 @@
 "D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\voronoi.dir/objects.a
 D:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\voronoi.dir/objects.a @CMakeFiles\voronoi.dir\objects1.rsp
-D:\MinGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\voronoi.dir/objects.a -Wl,--no-whole-archive -o voronoi.exe -Wl,--out-implib,libvoronoi.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\voronoi.dir\linklibs.rsp
+D:\MinGW\mingw64\bin\g++.exe -g -static -Wl,--whole-archive CMakeFiles\voronoi.dir/objects.a -Wl,--no-whole-archive -o voronoi.exe -Wl,--out-implib,libvoronoi.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\voronoi.dir\linklibs.rsp
