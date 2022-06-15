@@ -1,43 +1,59 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <random>
+#include <ctime>
+#include <algorithm>
+#include <iterator>
 
-using namespace std;
-
-void Merge(vector<int> &vec, int left, int middle, int right) {
-    vector<int> temp;
-    int i = left;
-    int j = middle + 1;
-    while (i <= middle && j <= right) {
-        if (vec[i] < vec[j]) {
-            temp.push_back(vec[i++]);
-        } else {
-            temp.push_back(vec[j++]);
+namespace cod {
+    void merge(std::vector<int> &paraVec, int paraLeft, int paraMiddle, int paraRight) {
+        int left = paraLeft, right = paraMiddle;
+        std::vector<int> tmpVector;
+        while (left < paraMiddle && right < paraRight) {
+            (paraVec[left] < paraVec[right]) ? tmpVector.push_back(paraVec[left++])
+                                             : tmpVector.push_back(paraVec[right++]);
+        }
+        while (left < paraMiddle) {
+            tmpVector.push_back(paraVec[left++]);
+        }
+        while (right < paraRight) {
+            tmpVector.push_back(paraVec[right++]);
+        }
+        for (int i = 0; i < tmpVector.size(); i++) {
+            paraVec[paraLeft + i] = tmpVector[i];
         }
     }
-    while (i <= middle) {
-        temp.push_back(vec[i++]);
-    }
-    while (j <= right) {
-        temp.push_back(vec[j++]);
-    }
-    for (int k = 0; k < temp.size(); k++) {
-        vec[left + k] = temp[k];
+
+    void mergeSort(std::vector<int> &paraVec, int paraLeft, int paraRight) {
+        if (paraLeft + 1 == paraRight) {
+            return;
+        }
+        int middle = paraLeft + (paraRight - paraLeft) / 2;
+        mergeSort(paraVec, paraLeft, middle);
+        mergeSort(paraVec, middle, paraRight);
+        merge(paraVec, paraLeft, middle, paraRight);
     }
 }
 
-void MergeSort(vector<int> &vec, int left, int right) {
-    if (left == right) {
-        return;
+class Gen {
+public:
+    int operator()() {
+        std::seed_seq seedSeq{time(nullptr)};
+        static std::default_random_engine defaultRandomEngine(seedSeq);
+        std::uniform_int_distribution<int> uniformIntDistribution(0, 100);
+        return uniformIntDistribution(defaultRandomEngine);
     }
-    int middle = (left + right) / 2;
-    MergeSort(vec, left, middle);
-    MergeSort(vec, middle + 1, right);
-    Merge(vec, left, middle, right);
-}
+};
 
 int main() {
-    vector<int> vec = {89, 64, 30, 92, 36, 62, 35, 18, 65, 9};
-    MergeSort(vec, 0, vec.size() - 1);
-    for (int item:vec) {
-        cout << item << endl;
-    }
+    std::vector<int> vec(10);
+    std::generate(vec.begin(), vec.end(), Gen());
+    std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << std::endl;
+
+    cod::mergeSort(vec, 0, vec.size());
+
+    std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << std::endl;
+    return 0;
 }
