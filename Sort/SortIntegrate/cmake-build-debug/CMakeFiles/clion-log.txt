@@ -1,0 +1,18 @@
+"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" H:\programe\GitHub-project-warehouse-manager\c-cpp-algorithm\Sort\SortIntegrate
+-- The C compiler identification is MSVC 19.32.31332.0
+-- The CXX compiler identification is MSVC 19.32.31332.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: D:/visual studio/IDE/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe
+-- Check for working C compiler: D:/visual studio/IDE/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe - works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: D:/visual studio/IDE/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe
+-- Check for working CXX compiler: D:/visual studio/IDE/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug

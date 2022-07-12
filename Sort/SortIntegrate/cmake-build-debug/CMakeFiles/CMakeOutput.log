@@ -1,0 +1,71 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/visual studio/IDE/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.32.31332 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/visual studio/IDE/VC/Tools/MSVC/14.32.31326/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.32.31332 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_d5854\fast && 	"D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_d5854.dir\build.make /nologo -L                  CMakeFiles\cmTC_d5854.dir\build
+Building C object CMakeFiles/cmTC_d5854.dir/testCCompiler.c.obj
+	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_d5854.dir\testCCompiler.c.obj.d --working-dir=H:\programe\GitHub-project-warehouse-manager\c-cpp-algorithm\Sort\SortIntegrate\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- "D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\cl.exe" @C:\Users\Administrator\AppData\Local\Temp\nm8445.tmp
+Linking C executable cmTC_d5854.exe
+	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_d5854.dir --rc="C:\PROGRA~2\Windows Kits\10\bin\10.0.22000.0\x86\rc.exe" --mt="C:\PROGRA~2\Windows Kits\10\bin\10.0.22000.0\x86\mt.exe" --manifests -- "D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\link.exe" /nologo @CMakeFiles\cmTC_d5854.dir\objects1.rsp @C:\Users\Administrator\AppData\Local\Temp\nm857F.tmp
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_e30bc\fast && 	"D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_e30bc.dir\build.make /nologo -L                  CMakeFiles\cmTC_e30bc.dir\build
+Building CXX object CMakeFiles/cmTC_e30bc.dir/testCXXCompiler.cxx.obj
+	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_e30bc.dir\testCXXCompiler.cxx.obj.d --working-dir=H:\programe\GitHub-project-warehouse-manager\c-cpp-algorithm\Sort\SortIntegrate\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- "D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\cl.exe" @C:\Users\Administrator\AppData\Local\Temp\nm9A5E.tmp
+Linking CXX executable cmTC_e30bc.exe
+	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_e30bc.dir --rc="C:\PROGRA~2\Windows Kits\10\bin\10.0.22000.0\x86\rc.exe" --mt="C:\PROGRA~2\Windows Kits\10\bin\10.0.22000.0\x86\mt.exe" --manifests -- "D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\link.exe" /nologo @CMakeFiles\cmTC_e30bc.dir\objects1.rsp @C:\Users\Administrator\AppData\Local\Temp\nm9BC6.tmp
+
+
+

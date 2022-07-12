@@ -1,0 +1,28 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_0a947\fast && 	"D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_0a947.dir\build.make /nologo -L                  CMakeFiles\cmTC_0a947.dir\build
+Building C object CMakeFiles/cmTC_0a947.dir/CMakeCCompilerABI.c.obj
+	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_0a947.dir\CMakeCCompilerABI.c.obj.d --working-dir=H:\programe\GitHub-project-warehouse-manager\c-cpp-algorithm\Sort\SortIntegrate\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- "D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\cl.exe" @C:\Users\Administrator\AppData\Local\Temp\nm7D31.tmp
+NMAKE : fatal error U1077: “"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"”: 返回代码“0xc0000409”
+Stop.
+NMAKE : fatal error U1077: “"D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\nmake.exe"”: 返回代码“0x2”
+Stop.
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_a90e8\fast && 	"D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_a90e8.dir\build.make /nologo -L                  CMakeFiles\cmTC_a90e8.dir\build
+Building CXX object CMakeFiles/cmTC_a90e8.dir/CMakeCXXCompilerABI.cpp.obj
+	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_a90e8.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=H:\programe\GitHub-project-warehouse-manager\c-cpp-algorithm\Sort\SortIntegrate\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- "D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\cl.exe" @C:\Users\Administrator\AppData\Local\Temp\nm9359.tmp
+NMAKE : fatal error U1077: “"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"”: 返回代码“0xc0000409”
+Stop.
+NMAKE : fatal error U1077: “"D:\visual studio\IDE\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\nmake.exe"”: 返回代码“0x2”
+Stop.
+
+
+
+

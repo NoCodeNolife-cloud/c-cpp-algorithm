@@ -1,3 +1,0 @@
-﻿  Sort Integration edition.cpp
-E:\项目\c_plus_plus\Algorithm\Sort\Sort Integration edition\Sort Integration edition.cpp(96,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  Sort Integration edition.vcxproj -> E:\项目\c_plus_plus\Algorithm\Sort\Sort Integration edition\Debug\Sort Integration edition.exe

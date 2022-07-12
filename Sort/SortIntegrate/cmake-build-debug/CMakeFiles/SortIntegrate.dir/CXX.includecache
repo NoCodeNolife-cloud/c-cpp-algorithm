@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/programe/GitHub-project-warehouse-manager/c-cpp-algorithm/Sort/SortIntegrate/main.cpp
+iostream
+-
+vector
+-
+random
+-
+iterator
+-
+
